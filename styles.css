@@ -1,0 +1,17 @@
+/* World Fiscal Uncertainty — site styles */
+:root { --wfu-muted: #6b6a65; }
+.quarto-dark { --wfu-muted: #a9a8a2; }
+
+/* reference entries with a hanging indent */
+.reference { padding-left: 2em; text-indent: -2em; margin: 0.6rem 0 1rem 0; }
+
+.fsize { color: var(--wfu-muted); font-size: 0.85em; white-space: nowrap; }
+.chart-note { color: var(--wfu-muted); font-size: 0.88rem; margin-top: 0.3rem; }
+
+table td code, table th code { white-space: nowrap; }
+
+figure img, .quarto-figure img { max-width: 100%; height: auto; }
+.figure-caption, figcaption { font-size: 0.9rem; }
+
+/* Observable inputs: controls in one row above the figure */
+.ojs-controls form { display: inline-flex; margin-right: 1.2rem; }

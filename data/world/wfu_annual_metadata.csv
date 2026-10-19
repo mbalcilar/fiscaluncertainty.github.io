@@ -1,0 +1,54 @@
+Variable,Label,Description,Unit
+Dataset,,"World fiscal uncertainty index, annual",
+Frequency,,Annual,
+Coverage,,"World, January 2016 to September 2026 (2026 is partial)",
+Format,,One row per period,
+Source,,"Author's calculations from the GDELT Global Knowledge Graph (web news, English and ~65 machine-translated languages), data through 30 September 2026",
+Construction,,"Share of news articles tagged with uncertainty (U), economy (E) and fiscal (F) GDELT themes; country shares shrunk by empirical Bayes toward the country's own mean; index = 100 x share / 2016-2025 mean; _Z = within-series standardized log share over 2016-2025. See Appendix B of the paper.",
+Missing values,,Empty cell = no articles in the cell or series undefined,
+Version,,1.0 (October 2026),
+Citation (required),,"Balcilar, M. (2026). Global Uncertainty and Fiscal Space: Who Can Still Afford to Act? Working paper, University of New Haven. https://www.fiscaluncertainty.com",
+Paper,,https://www.fiscaluncertainty.com/paper/Balcilar_Fiscal_Space_Uncertainty_Web.pdf,
+Website,,https://www.fiscaluncertainty.com,
+Author,,"Mehmet Balcilar, University of New Haven (mbalcilar@newhaven.edu)",
+Copyright,,(c) 2026 Mehmet Balcilar. Free for research and teaching with citation of the paper above.,
+,,,
+YEAR,Year,"Calendar year, YYYY",YYYY
+MONTHS,Months covered,Number of months of the year inside the data window (12 = complete year; 2026 covers January-September),months
+PARTIAL,Partial period,1 = the period is only partly covered by the data (2026 covers January-September); excluded from the base period,0/1
+WFU,World fiscal uncertainty (index),"Fiscal uncertainty (headline): share of articles tagged uncertainty & economy & fiscal (U*E*F); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_Z,World fiscal uncertainty (z-score),Fiscal uncertainty (headline): share of articles tagged uncertainty & economy & fiscal (U*E*F); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WFU_SH,World fiscal uncertainty (share),"Fiscal uncertainty (headline): share of articles tagged uncertainty & economy & fiscal (U*E*F); world (all articles worldwide; view W); articles per 1,000 articles","per 1,000 articles"
+N_W,"Number of articles, W",Number of articles in the world (all articles worldwide; view W) in the period,articles
+K_W,"Number of fiscal uncertainty (U*E*F) articles, W",Number of fiscal uncertainty (U*E*F) articles in the world (all articles worldwide; view W) in the period,articles
+WFU_PNL,"World fiscal uncertainty, stable outlets (index)","Fiscal uncertainty (headline): share of articles tagged uncertainty & economy & fiscal (U*E*F); world (all articles worldwide; view W), stable outlet panel (outlets present in every year 2016-2025); index, 2016-2025 average = 100",index
+WFU_PNL_Z,"World fiscal uncertainty, stable outlets (z-score)","Fiscal uncertainty (headline): share of articles tagged uncertainty & economy & fiscal (U*E*F); world (all articles worldwide; view W), stable outlet panel (outlets present in every year 2016-2025); standardized log share: (ln share - mean) / s.d. over 2016-2025",z-score
+WEPU,World economic policy uncertainty (index),"Economic policy uncertainty (U * E * P; Baker-Bloom-Davis triple); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WEPU_Z,World economic policy uncertainty (z-score),Economic policy uncertainty (U * E * P; Baker-Bloom-Davis triple); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WEPU_NF,World non-fiscal EPU (index),"Non-fiscal economic policy uncertainty (EPU and not F; placebo); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WEPU_NF_Z,World non-fiscal EPU (z-score),Non-fiscal economic policy uncertainty (EPU and not F; placebo); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WFA,World fiscal attention (index),"Fiscal attention: fiscal-economic (E*F) articles / all articles (no uncertainty term); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFA_Z,World fiscal attention (z-score),Fiscal attention: fiscal-economic (E*F) articles / all articles (no uncertainty term); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+TONE_W,"Tone of fiscal coverage, W",Mean GDELT tone of fiscal-economic articles (E*F) in the world (all articles worldwide; view W); negative = negative coverage,tone
+WFU_EB,"World fiscal uncertainty, broad economy lexicon (index)","Fiscal uncertainty, broad economy lexicon (U * E+ * F); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_EB_Z,"World fiscal uncertainty, broad economy lexicon (z-score)","Fiscal uncertainty, broad economy lexicon (U * E+ * F); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025",z-score
+WFU_FB,"World fiscal uncertainty, broad fiscal lexicon (index)","Fiscal uncertainty, broad fiscal lexicon (U * E * F+; adds World Bank public-finance topics); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_FB_Z,"World fiscal uncertainty, broad fiscal lexicon (z-score)","Fiscal uncertainty, broad fiscal lexicon (U * E * F+; adds World Bank public-finance topics); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025",z-score
+WFU_FN,"World fiscal uncertainty, narrow fiscal lexicon (index)","Fiscal uncertainty, narrow fiscal lexicon (U * E * F-; Baker-Bloom-Davis fiscal categories only); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_FN_Z,"World fiscal uncertainty, narrow fiscal lexicon (z-score)","Fiscal uncertainty, narrow fiscal lexicon (U * E * F-; Baker-Bloom-Davis fiscal categories only); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025",z-score
+WFU_INT,World fiscal uncertainty intensity (index),"Fiscal uncertainty intensity: FU articles / fiscal-economic (E*F) articles; world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_INT_Z,World fiscal uncertainty intensity (z-score),Fiscal uncertainty intensity: FU articles / fiscal-economic (E*F) articles; world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WFU_NOE,"World fiscal uncertainty, no economy term (index)","Fiscal uncertainty without the economy requirement (U * F); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_NOE_Z,"World fiscal uncertainty, no economy term (z-score)",Fiscal uncertainty without the economy requirement (U * F); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WFU_UB,"World fiscal uncertainty, broad uncertainty lexicon (index)","Fiscal uncertainty, broad uncertainty lexicon (U+ * E * F); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WFU_UB_Z,"World fiscal uncertainty, broad uncertainty lexicon (z-score)","Fiscal uncertainty, broad uncertainty lexicon (U+ * E * F); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025",z-score
+WMPU,World monetary policy uncertainty (index),"Monetary policy uncertainty (U * E * M); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WMPU_Z,World monetary policy uncertainty (z-score),Monetary policy uncertainty (U * E * M); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WSDU,World sovereign-debt uncertainty (index),"Sovereign-debt uncertainty (U * S); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WSDU_Z,World sovereign-debt uncertainty (z-score),Sovereign-debt uncertainty (U * S); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WTPU,World trade policy uncertainty (index),"Trade policy uncertainty (U * E * T); world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WTPU_Z,World trade policy uncertainty (z-score),Trade policy uncertainty (U * E * T); world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WUNC,World uncertainty (any) (index),"Any uncertainty (U): share of articles with an uncertainty term; world (all articles worldwide; view W); index, 2016-2025 average = 100",index
+WUNC_Z,World uncertainty (any) (z-score),Any uncertainty (U): share of articles with an uncertainty term; world (all articles worldwide; view W); standardized log share: (ln share - mean) / s.d. over 2016-2025,z-score
+WEPU_PNL,"World economic policy uncertainty, stable outlets (index)","Economic policy uncertainty (U * E * P; Baker-Bloom-Davis triple); world (all articles worldwide; view W), stable outlet panel (outlets present in every year 2016-2025); index, 2016-2025 average = 100",index
+WEPU_PNL_Z,"World economic policy uncertainty, stable outlets (z-score)","Economic policy uncertainty (U * E * P; Baker-Bloom-Davis triple); world (all articles worldwide; view W), stable outlet panel (outlets present in every year 2016-2025); standardized log share: (ln share - mean) / s.d. over 2016-2025",z-score
